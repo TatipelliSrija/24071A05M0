@@ -1,7 +1,6 @@
-
 {
   "name": "library-system",
-  "homepage": "https://YOUR_USERNAME.github.io/library-system",
+  "homepage": "https://TatipelliSrija.github.io/24071A05M0",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,20 +8,18 @@
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^6.3.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-router-dom": "^7.14.2",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+"scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
-}
-,
+},
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -40,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
