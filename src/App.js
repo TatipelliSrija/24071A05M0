@@ -4,43 +4,39 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Catalogue from "./pages/Catalogue";
-import Issue from "./pages/Issue";
-import Return from "./pages/Return";
+import PropertyListings from "./pages/PropertyListings";
+import PropertyDetails from "./pages/PropertyDetails";
+import Enquiry from "./pages/Enquiry";
 import Contact from "./pages/Contact";
-import About from "./pages/About";
 
 function App() {
   return (
     <Router>
 
-      <nav style={{ padding: "10px", background: "#ddd" }}>
+      <nav style={{ padding: "15px", backgroundColor: "lightblue" }}>
         <Link to="/">Home</Link> |{" "}
         <Link to="/login">Login</Link> |{" "}
-        <Link to="/register">Register</Link> |{" "}
-        <Link to="/catalogue">Catalogue</Link> |{" "}
-        <Link to="/issue">Issue Book</Link> |{" "}
-        <Link to="/return">Return Book</Link> |{" "}
-        <Link to="/contact">Contact</Link> |{" "}
-        <Link to="/about">About</Link>
+        <Link to="/propertylistings">Property Listings</Link> |{" "}
+        <Link to="/propertydetails">Property Details</Link> |{" "}
+        <Link to="/enquiry">Enquiry</Link> |{" "}
+        <Link to="/contact">Contact</Link>
       </nav>
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/catalogue" element={<Catalogue />} />
-        <Route path="/issue" element={<Issue />} />
-        <Route path="/return" element={<Return />} />
+        <Route path="/propertylistings" element={<PropertyListings />} />
+        <Route path="/propertydetails" element={<PropertyDetails />} />
+        <Route path="/enquiry" element={<Enquiry />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
       </Routes>
 
-      <div className="footer">
-          <p>© 24071A05M0 Ecommerce Website</p>
-        </div>
-        
+      <div style={{ backgroundColor: "black", color: "white", padding: "10px", marginTop: "20px" }}>
+        <center>
+          <p>© 24071A05M0 Real Estate Website</p>
+        </center>
+      </div>
+
     </Router>
   );
 }
